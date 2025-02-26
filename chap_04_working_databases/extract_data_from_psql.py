@@ -1,0 +1,1 @@
+import psycopg2 as dbfrom faker import Fakerconn_string = "dbname = 'dataengineeringdb' host='localhost' port='5437' user='postgres' password='MineOne'  "conn = db.connect(conn_string)cur = conn.cursor()query = ("SELECT * FROM users")cur.execute(query)for record in cur:    print(record)
