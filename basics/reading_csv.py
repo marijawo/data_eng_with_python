@@ -1,6 +1,6 @@
 import csv
 
-with open('./datasets/customer.csv', newline='') as f:
+with open('../datasets/customer.csv', newline='') as f:
     myreader = csv.DictReader(f)  # Instantiate DictReader with the file object
     headers = next(myreader)  # Get the first row (column headers)
 

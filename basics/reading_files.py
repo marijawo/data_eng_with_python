@@ -1,6 +1,6 @@
 import csv
 
-output = open('./datasets/mycsv.csv', mode='w')
+output = open('../datasets/mycsv.csv', mode='w')
 
 mywriter = csv.writer(output)
 

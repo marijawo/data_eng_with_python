@@ -1,7 +1,7 @@
 from faker import Faker
 import csv
 
-output = open('datasets/customer.csv', 'w')
+output = open('../datasets/customer.csv', 'w')
 fake = Faker()
 
 header = ['name', 'age', 'city', 'state', 'zip', 'lng', 'lat']
