@@ -26,7 +26,7 @@ default_args = {
 with DAG(
         dag_id='csvToJsonDAG',
         default_args=default_args,
-        schedule='@daily',  # ✅ Corrected schedule
+        schedule= dt.timedelta(minutes=5),  # ✅ Corrected schedule
         catchup=False,
 ) as dag:
     # Task 1: Print message before conversion
